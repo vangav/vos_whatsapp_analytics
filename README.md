@@ -48,6 +48,14 @@
 + at the end to stop the services: press `control + d` in the terminal session where each service was started in (9, 10 and 11)
 + to stop cassandra: execute `ps auwx | grep cassandra` to get cassandra's `(pid)` then `kill -9 (pid)` to stop cassandra
 
+## eclipse
+
++ follow the following steps to import the downloaded backend service in eclipse
+
+1. `cd` to the service's directory and execute the `./_eclipsify.sh` script
+2. file **>** import **>** general **>** existing projects into workspace **>** next **>** set "select root directory" to my_services **>** under projects make sure that vos_calculate_sum is selected **>** finish
+3. double check the java version used for compiling the project: right click the project **>** properties **>** java compiler **>** enable project specific settings **>** compiler compliance level **>** 1.7 or 1.8
+
 ## covered topics
 
 + generate multiple services (main + worker + analytics) to work together in a service oriented architecture
